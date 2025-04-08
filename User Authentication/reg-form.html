@@ -4,89 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup</title>
 </head>
 
 <body>
     <a href="home.html">Back to home</a><br>
     <h3>Please Register</h3>
-    <form>
+
+    <form onsubmit="return validateSignupForm()" enctype="multipart/form-data">
         <table>
             <tr>
-                <td><label>First Name: </label></td>
-                <td><input type="text"></td>
+                <td><label for="name">Employee Name:</label></td>
+                <td><input type="text" id="name" name="name" /></td>
             </tr>
             <tr>
-                <td><label>Last Name: </label></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td> <label>ID: </label></td>
-                <td><input type="number"></td>
-            </tr>
-            <tr>
-                <td><label>Email: </label></td>
-                <td><input type="email"></td>
-            </tr>
-            <tr>
-                <td><label>Password: </label></td>
-                <td><input type="password"></td>
-            </tr>
-            <tr>
-                <td><label>Date of birth: </label></td>
-                <td><input type="date"></td>
-            </tr>
-            <tr>
-                <td><label>Gender: </label> <br></td>
-                <td> <input type="radio" name="Gender"> Male
-                    <input type="radio" name="Gender"> female
-                    <input type="radio" name="Gender"> Other
-                </td>
-            </tr>
-            <tr>
-                <td><label>Skills</label><br></td>
+                <td></td>
                 <td>
-                    <input type="checkbox" name="SKills"> HTML, CSS <br>
-                    <input type="checkbox" name="SKills"> Python, Django <br>
-                    <input type="checkbox" name="SKills"> Javascript, PHP <br>
-
+                    <p id="nameError"></p>
                 </td>
             </tr>
+
             <tr>
-                <td>Dept:</td>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" id="email" name="email" /></td>
+            </tr>
+            <tr>
+                <td></td>
                 <td>
-                    <select>
-                        <option>CSE</option>
-                        <option>EEE</option>
-                        <option>BBA</option>
-                    </select>
+                    <p id="emailError"></p>
                 </td>
             </tr>
-            <tr>
-                <td>Image:</td>
-                <td><input type="file" /></td>
-            </tr>
-            <tr>
-                <td>Address: </td>
-                <td><textarea></textarea> </td>
-            </tr>
-            <tr>
-                <td><input type="button" value="Click" />
 
-                </td>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" /></td>
+            </tr>
+            <tr>
+                <td></td>
                 <td>
-                    <input type="submit" value="Submit" />
-                    <input type="reset" value="Reset" />
-
+                    <p id="passError"></p>
                 </td>
-
-
             </tr>
 
+            <tr>
+                <td><label for="confirmPassword">Confirm Password:</label></td>
+                <td><input type="password" id="confirmPassword" name="confirmPassword" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p id="confirmPassError"></p>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="profilePic">Image:</label></td>
+                <td><input type="file" id="profilePic" name="profilePic" /></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Register" /></td>
+                <td><a href="login.html">Already have an account? Please Login</a></td>
+            </tr>
         </table>
-        <a href="login.html"> Already have an account? Please Login</a>
-
     </form>
+
+    <script>
+        function validateSignupForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            var nameError = document.getElementById("nameError");
+            var emailError = document.getElementById("emailError");
+            var passError = document.getElementById("passError");
+            var confirmPassError = document.getElementById("confirmPassError");
+
+            var valid = true;
+
+            // Name validation
+            if (name === "") {
+                nameError.innerHTML = "Name cannot be empty.";
+                nameError.style.color = "red";
+                valid = false;
+            } else {
+                nameError.innerHTML = "";
+            }
+
+            // Email validation
+            if (email === "") {
+                emailError.innerHTML = "Email cannot be empty.";
+                emailError.style.color = "red";
+                valid = false;
+            } else if (!(email.includes("@") && email.includes("."))) {
+                emailError.innerHTML = "Enter a valid email address (e.g., anything@example.com).";
+                emailError.style.color = "red";
+                valid = false;
+            } else {
+                var atIndex = email.indexOf("@");
+                var dotIndex = email.lastIndexOf(".");
+                if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex + 2 >= email.length) {
+                    emailError.innerHTML = "Enter a valid email address (e.g., anything@example.com).";
+                    emailError.style.color = "red";
+                    valid = false;
+                } else {
+                    emailError.innerHTML = "";
+                }
+            }
+
+            // Password validation
+            if (password === "") {
+                passError.innerHTML = "Password cannot be empty.";
+                passError.style.color = "red";
+                valid = false;
+            } else if (password.length < 8) {
+                passError.innerHTML = "Password must be at least 8 characters long.";
+                passError.style.color = "red";
+                valid = false;
+            } else {
+                passError.innerHTML = "";
+            }
+
+            // Confirm Password validation
+            if (confirmPassword === "") {
+                confirmPassError.innerHTML = "Please confirm your password.";
+                confirmPassError.style.color = "red";
+                valid = false;
+            } else if (password !== confirmPassword) {
+                confirmPassError.innerHTML = "Passwords do not match.";
+                confirmPassError.style.color = "red";
+                valid = false;
+            } else {
+                confirmPassError.innerHTML = "";
+            }
+
+            if (valid) {
+                alert("Registration successful!");
+            }
+
+            return valid;
+        }
+    </script>
 </body>
 
 </html>
