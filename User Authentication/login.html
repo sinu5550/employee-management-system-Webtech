@@ -11,7 +11,7 @@
     <a href="home.html">Back to home</a><br>
     <h3>Please Login</h3>
 
-    <form onsubmit="return validateForm()">
+    <form method="post" action="validation.php">
         <table>
             <tr>
                 <td><label for="email">Email: </label></td>
@@ -47,7 +47,7 @@
         <a href="reg-form.html">Don't have an account? Please Register</a>
     </form>
 
-    <script>
+    <!-- <script>
         function validateForm() {
             var email = document.getElementById("email").value.trim();
             var password = document.getElementById("password").value.trim();
@@ -92,7 +92,7 @@
 
             return valid;
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
