@@ -47,52 +47,6 @@
         <a href="reg-form.html">Don't have an account? Please Register</a>
     </form>
 
-    <!-- <script>
-        function validateForm() {
-            var email = document.getElementById("email").value.trim();
-            var password = document.getElementById("password").value.trim();
-            var emailError = document.getElementById("emailError");
-            var passError = document.getElementById("passError");
-
-            var valid = alert("Login successful!");
-
-            // Email validation 
-            if (email === "") {
-                emailError.innerHTML = "Email cannot be empty.";
-                emailError.style.color = "red";
-                valid = false;
-            } else if (!(email.includes("@") && email.includes("."))) {
-                emailError.innerHTML = "Enter a valid email address (e.g., anything@example.com).";
-                emailError.style.color = "red";
-                valid = false;
-            } else {
-                var atIndex = email.indexOf("@");
-                var dotIndex = email.lastIndexOf(".");
-                if (atIndex < 1 || dotIndex < atIndex + 2 || dotIndex + 2 >= email.length) {
-                    emailError.innerHTML = "Enter a valid email address (e.g., anything@example.com).";
-                    emailError.style.color = "red";
-                    valid = false;
-                } else {
-                    emailError.innerHTML = "";
-                }
-            }
-
-            // Password validation 
-            if (password === "") {
-                passError.innerHTML = "Password cannot be empty.";
-                passError.style.color = "red";
-                valid = false;
-            } else if (password.length < 8) {
-                passError.innerHTML = "Password must be at least 8 characters long.";
-                passError.style.color = "red";
-                valid = false;
-            } else {
-                passError.innerHTML = "";
-            }
-
-            return valid;
-        }
-    </script> -->
 </body>
 
 </html>
