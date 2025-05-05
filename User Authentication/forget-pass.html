@@ -3,27 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forget Password</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a href="home.html">Back to home</a><br>
-    <h3>Reset Your Password</h3>
-    <form>
-        <table>
-            <tr>
-                <td><label>Email: </label></td>
-                <td><input type="email" required></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="Submit" /></td>
-                <td>
-                    <a href="login.html">Back to Login</a>
-                </td>
-            </tr>
-        </table>
-    </form>
+    <div class="container">
+        <a href="home.html">Back to home</a>
+        <h3>Reset Your Password</h3>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="resetEmail">Email:</label></td>
+                    <td><input type="email" id="resetEmail" required></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Submit" /></td>
+                    <td><a href="login.html">Back to Login</a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
 </body>
 
 </html>

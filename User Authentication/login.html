@@ -3,50 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a href="home.html">Back to home</a><br>
-    <h3>Please Login</h3>
+    <div class="container">
+        <a href="home.html">Back to home</a>
+        <h3>Please Login</h3>
 
-    <form method="post" action="validation.php">
-        <table>
-            <tr>
-                <td><label for="email">Email: </label></td>
-                <td>
-                    <input type="text" id="email" name="email">
+        <form method="post" action="validation.php">
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" id="email" name="email" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p id="emailError" class="error"></p>
+                    </td>
+                </tr>
 
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <p id="emailError"></p>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="password">Password: </label></td>
-                <td>
-                    <input type="password" id="password" name="password">
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p id="passError" class="error"></p>
+                    </td>
+                </tr>
 
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <p id="passError"></p>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Login" /></td>
-                <td><a href="forget-pass.html">Forgot your password?</a></td>
-            </tr>
-        </table>
-        <a href="reg-form.html">Don't have an account? Please Register</a>
-    </form>
-
+                <tr>
+                    <td><input type="submit" value="Login" /></td>
+                    <td><a href="forget-pass.html">Forgot your password?</a></td>
+                </tr>
+            </table>
+            <a href="reg-form.html">Don't have an account? Please Register</a>
+        </form>
+    </div>
 </body>
 
 </html>
