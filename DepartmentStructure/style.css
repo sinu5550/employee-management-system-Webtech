@@ -1,0 +1,62 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.editor-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.editor-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reporting-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.reporting-container h2 {
+    margin-bottom: 20px;
+}
+
+.line-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.line-item strong {
+    color: #007bff;
+}
