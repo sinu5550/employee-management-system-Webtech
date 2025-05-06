@@ -11,7 +11,7 @@
 
 <body>
     <div class="reporting-container">
-        <a href="department-editor.html">← Back to Department Structure</a>
+        <a href="department-editor.php">← Back to Department Structure</a>
         <h2>Reporting Lines Overview</h2>
 
         <div class="line-item">

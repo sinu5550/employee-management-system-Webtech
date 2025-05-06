@@ -13,9 +13,9 @@
         <p>This is the home page of our website. Explore our features and enjoy your stay!</p>
         <nav>
             <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="reg-form.html">Register</a></li>
-                <li><a href="forget-pass.html">Forgot Password</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="reg-form.php">Register</a></li>
+                <li><a href="forget-pass.php">Forgot Password</a></li>
             </ul>
         </nav>
     </div>

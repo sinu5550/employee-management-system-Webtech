@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <a href="view-profile.html">← Back to Profile</a>
+        <a href="view-profile.php">← Back to Profile</a>
         <h3>Update Password</h3>
 
         <form method="post" action="update-password.php">

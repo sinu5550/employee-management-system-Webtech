@@ -12,7 +12,7 @@
         <h3>Thank You!</h3>
         <p>Your message has been received. We will get back to you shortly.</p>
         <p>A confirmation email has been sent to your provided address.</p>
-        <a href="../UserAuthentication/home.html" class="btn">Return to Home</a>
+        <a href="../UserAuthentication/home.php" class="btn">Return to Home</a>
     </div>
 </body>
 

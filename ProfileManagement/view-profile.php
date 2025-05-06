@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <a href="../UserAuthentication/home.html">← Back to home</a>
+        <a href="../UserAuthentication/home.php">← Back to home</a>
         <h3>View Profile</h3>
 
         <div class="profile-info">
@@ -18,9 +18,9 @@
                 <p><strong>Name:</strong> Ahmed Siyan</p>
                 <p><strong>Email:</strong> ahmedsiyan@gmail.com</p>
                 <p><strong>Joined:</strong> January 2020</p>
-                <p><a href="edit-profile.html" class="btn">Edit Profile</a></p>
-                <p><a href="change-avatar.html" class="btn">Change Avatar</a></p>
-                <p><a href="update-password.html" class="btn">Update Password</a></p>
+                <p><a href="edit-profile.php" class="btn">Edit Profile</a></p>
+                <p><a href="change-avatar.php" class="btn">Change Avatar</a></p>
+                <p><a href="update-password.php" class="btn">Update Password</a></p>
             </div>
         </div>
     </div>

@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <a href="view-profile.html">← Back to Profile</a>
+        <a href="view-profile.php">← Back to Profile</a>
         <h3>Change Avatar</h3>
         <img src="images/sinu11.jpg" alt="Profile Picture" class="profile-avatar">
         <form method="post" action="upload-avatar.php" enctype="multipart/form-data">

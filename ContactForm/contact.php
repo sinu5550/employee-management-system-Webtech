@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <a href="../UserAuthentication/home.html">← Back to Home</a>
+        <a href="../UserAuthentication/home.php">← Back to Home</a>
         <h3>Contact Us</h3>
 
         <form onsubmit="return contactValidate()">
@@ -46,7 +46,7 @@
 
     <script>
         function contactValidate() {
-            window.location.href = "submit-contact.html";
+            window.location.href = "submit-contact.php";
             return false;
         }
 

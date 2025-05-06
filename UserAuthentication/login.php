@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <a href="home.html">Back to home</a>
+        <a href="home.php">Back to home</a>
         <h3>Please Login</h3>
 
         <form method="post" action="validation.php">
@@ -37,11 +37,11 @@
                 </tr>
 
                 <tr>
-                    <td><input type="submit" value="Login" /></td>
-                    <td><a href="forget-pass.html">Forgot your password?</a></td>
+                    <td><input type="submit" name="submit" value="Login" /></td>
+                    <td><a href="forget-pass.php">Forgot your password?</a></td>
                 </tr>
             </table>
-            <a href="reg-form.html">Don't have an account? Please Register</a>
+            <a href="reg-form.php">Don't have an account? Please Register</a>
         </form>
     </div>
 </body>

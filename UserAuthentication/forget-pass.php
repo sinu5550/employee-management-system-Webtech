@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <a href="home.html">Back to home</a>
+        <a href="home.php">Back to home</a>
         <h3>Reset Your Password</h3>
         <form>
             <table>
@@ -19,7 +19,7 @@
                 </tr>
                 <tr>
                     <td><input type="button" value="Submit" /></td>
-                    <td><a href="login.html">Back to Login</a></td>
+                    <td><a href="login.php">Back to Login</a></td>
                 </tr>
             </table>
         </form>

@@ -17,10 +17,10 @@
 
         <ul id="employeeList">
             <li>
-                <strong>Alice Johnson</strong> (JavaScript) <a href="employee-profile.html">View Profile</a>
+                <strong>Alice Johnson</strong> (JavaScript) <a href="employee-profile.php">View Profile</a>
             </li>
             <li>
-                <strong>Bob Smith</strong> (Python) <a href="employee-profile.html">View Profile</a>
+                <strong>Bob Smith</strong> (Python) <a href="employee-profile.php">View Profile</a>
             </li>
         </ul>
     </div>

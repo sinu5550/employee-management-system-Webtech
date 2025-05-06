@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <a href="home.html">Back to home</a>
+        <a href="home.php">Back to home</a>
         <h3>Please Register</h3>
 
         <form method="post" action="validation.php" enctype="multipart/form-data">
@@ -65,7 +65,7 @@
 
                 <tr>
                     <td><input type="submit" value="Register" /></td>
-                    <td><a href="login.html">Already have an account? Please Login</a></td>
+                    <td><a href="login.php">Already have an account? Please Login</a></td>
                 </tr>
             </table>
         </form>

@@ -11,7 +11,7 @@
 
 <body>
     <div class="editor-container">
-        <a href="department-structure.html">← Back to Department Structure</a>
+        <a href="department-structure.php">← Back to Department Structure</a>
         <h2>Edit Department</h2>
 
         <form>
@@ -38,7 +38,7 @@
             <button class="btn" type="submit">Save Changes</button>
 
         </form>
-        <a href="reporting-lines.html"> Go to Reporting Lines</a>
+        <a href="reporting-lines.php"> Go to Reporting Lines</a>
     </div>
 </body>
 

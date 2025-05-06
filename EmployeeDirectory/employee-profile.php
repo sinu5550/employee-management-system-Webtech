@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_COOKIE['status'])){
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,8 +21,15 @@
         <p><strong>Name:</strong> Alice Johnson</p>
         <p><strong>Skill:</strong> JavaScript</p>
         <p><strong>Contact:</strong> alice@example.com</p>
-        <a href="employee-list.html" class="btn">Back to Directory</a>
+        <a href="employee-list.php" class="btn">Back to Directory</a>
     </div>
 </body>
 
 </html>
+
+<?php
+    }else{
+        header('location: ../userAuthentication/login.php');
+    }
+
+?>
