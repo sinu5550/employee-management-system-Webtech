@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exit Interview Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="ExitForm.html">Exit Form</a>
+  <a href="KnowledgeTransfer.html">Knowledge Transfer</a>
+</nav>
+
+<header>
+  <h1>Exit Interview Form</h1>
+</header>
+
+<section>
+  <form onsubmit="alert('Exit form submitted successfully!'); return false;">
+    <label for="reason">Reason for Leaving</label>
+    <textarea id="reason" rows="4"></textarea>
+
+    <label for="feedback">Feedback on Experience</label>
+    <textarea id="feedback" rows="4"></textarea>
+
+    <label>Company Asset Checklist</label>
+    <input type="checkbox" id="laptop"> <label for="laptop">Laptop Returned</label><br>
+    <input type="checkbox" id="idbadge"> <label for="idbadge">ID Badge Returned</label><br>
+    <input type="checkbox" id="access"> <label for="access">Building Access Revoked</label><br>
+
+    <label for="alumni">
+      <input type="checkbox" id="alumni"> I wish to join the Alumni Network
+    </label>
+
+    <button type="submit">Submit Exit Form</button>
+  </form>
+</section>
+
+<footer>&copy; 2025 Company Exit System</footer>
+</body>
+</html>

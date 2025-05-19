@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Content Moderation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>Content Moderation</header>
+  <nav>
+    <a href="userManagement.html">Users</a>
+    <a href="Contentmoderator.html">Content Moderation</a>
+    <a href="SystemSettings.html">System Settings</a>
+  </nav>
+  <div class="container">
+    <div class="filters">
+      <input type="text" placeholder="Search content...">
+      <select>
+        <option>Type</option>
+        <option>Post</option>
+        <option>Comment</option>
+      </select>
+      <button>Apply Filter</button>
+    </div>
+    <button>Delete Selected</button>
+    <table>
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Content ID</th>
+          <th>Description</th>
+          <th>Reported</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>101</td>
+          <td>Inappropriate comment</td>
+          <td>5 times</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>102</td>
+          <td>Spam post</td>
+          <td>2 times</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

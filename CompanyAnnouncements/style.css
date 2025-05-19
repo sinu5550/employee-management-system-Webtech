@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header, footer, nav, section {
+    padding: 1.5em;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #34495e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  
+  .announcement {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em auto;
+    width: 80%;
+    text-align: left;
+  }
+  
+  .reactions, .comments {
+    margin-top: 0.5em;
+  }
+  
+  .reactions button {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+  }
+  
+  .alert {
+    background-color: #fdecea;
+    border-left: 5px solid #e74c3c;
+    color: #c0392b;
+    padding: 1em;
+    margin: 1em auto;
+    width: 80%;
+    text-align: left;
+    border-radius: 6px;
+  }
+  
+  .read-ack {
+    margin-top: 1em;
+  }
+  
+  .read-ack input {
+    margin-right: 5px;
+  }
