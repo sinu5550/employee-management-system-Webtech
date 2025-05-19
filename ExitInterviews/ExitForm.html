@@ -17,7 +17,7 @@
 </header>
 
 <section>
-  <form onsubmit="alert('Exit form submitted successfully!'); return false;">
+  <form onsubmit="return validateExitForm();">
     <label for="reason">Reason for Leaving</label>
     <textarea id="reason" rows="4"></textarea>
 
@@ -38,5 +38,28 @@
 </section>
 
 <footer>&copy; 2025 Company Exit System</footer>
+
+<script>
+  function validateExitForm() {
+    const reason = document.getElementById("reason").value.trim();
+    const feedback = document.getElementById("feedback").value.trim();
+    const laptop = document.getElementById("laptop").checked;
+    const idbadge = document.getElementById("idbadge").checked;
+    const access = document.getElementById("access").checked;
+
+    if (reason === "" || feedback === "") {
+      alert("Please fill in both the reason and feedback fields.");
+      return false;
+    }
+
+    if (!laptop || !idbadge || !access) {
+      const confirmContinue = confirm("Some assets are not marked as returned. Are you sure you want to continue?");
+      if (!confirmContinue) return false;
+    }
+
+    alert("Exit form submitted successfully!");
+    return true;
+  }
+</script>
 </body>
 </html>

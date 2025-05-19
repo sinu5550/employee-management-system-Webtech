@@ -17,7 +17,7 @@
 </header>
 
 <section>
-  <form onsubmit="alert('Knowledge transfer submitted. Thank you!'); return false;">
+  <form onsubmit="return validateKnowledgeTransfer();">
     <label for="projects">Ongoing Projects</label>
     <textarea id="projects" rows="3" placeholder="List current responsibilities and projects..."></textarea>
 
@@ -32,5 +32,21 @@
 </section>
 
 <footer>&copy; 2025 Company Exit System</footer>
+
+<script>
+  function validateKnowledgeTransfer() {
+    const projects = document.getElementById("projects").value.trim();
+    const handover = document.getElementById("handover").value.trim();
+    const documents = document.getElementById("documents").value.trim();
+
+    if (!projects || !handover || !documents) {
+      alert("Please complete all fields before submitting.");
+      return false;
+    }
+
+    alert("Knowledge transfer submitted. Thank you!");
+    return true;
+  }
+</script>
 </body>
 </html>
