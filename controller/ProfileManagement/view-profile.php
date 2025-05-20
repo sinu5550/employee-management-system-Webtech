@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <a href="../view/UserAuthentication/home.php">← Back to home</a>
+        <a href="../../view/UserAuthentication/home.php">← Back to home</a>
         <h3>View Profile</h3>
 
         <div class="profile-info">

@@ -86,7 +86,7 @@
 
 <?php
     }else{
-        header('location: ../view/userAuthentication/login.php');
+        header('location: ../../view/userAuthentication/login.php');
     }
 
 ?>
