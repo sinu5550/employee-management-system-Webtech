@@ -1,3 +1,9 @@
+<?php
+    }else{
+        header('location: ../userAuthentication/login.php');
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,3 +42,9 @@
   <footer>&copy; 2025 Company Name</footer>
 </body>
 </html>
+<?php
+    }else{
+        header('location: ../userAuthentication/login.php');
+    }
+
+?>

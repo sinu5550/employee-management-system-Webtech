@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    if(isset($_COOKIE['status'])){
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,3 +65,9 @@
   <footer>&copy; 2025 Company Timesheet System</footer>
 </body>
 </html>
+<?php
+    }else{
+        header('location: ../userAuthentication/login.php');
+    }
+
+?>
