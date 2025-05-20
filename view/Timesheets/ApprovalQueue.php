@@ -13,8 +13,8 @@
 </head>
 <body>
   <nav>
-    <a href="WeeklyTimesheet.html">Timesheet</a>
-    <a href="ApprovalQueue.html">Approvals</a>
+    <a href="WeeklyTimesheet.php">Timesheet</a>
+    <a href="ApprovalQueue.php">Approvals</a>
   </nav>
 
   <header>

@@ -13,17 +13,17 @@
 </head>
 <body>
   <nav>
-    <a href="mainLanding.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="mainLanding.html#about">About</a>
-    <a href="mainLanding.html#signup">Signup</a>
+    <a href="mainLanding.php">Home</a>
+    <a href="features.php">Features</a>
+    <a href="testimonials.php">Testimonials</a>
+    <a href="mainLanding.php#about">About</a>
+    <a href="mainLanding.php#signup">Signup</a>
   </nav>
 
   <section>
     <h2>Key Features</h2>
     <p>Track attendance, manage performance, handle payroll, and much more.</p>
-    <a href="mainLanding.html#signup" class="cta-button">Start Now</a>
+    <a href="mainLanding.php#signup" class="cta-button">Start Now</a>
   </section>
 
   <footer>

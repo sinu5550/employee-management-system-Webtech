@@ -13,8 +13,8 @@
 </head>
 <body>
   <nav>
-    <a href="InteractiveChart.html">Org Chart</a>
-    <a href="ProfileCards.html">Profiles</a>
+    <a href="InteractiveChart.php">Org Chart</a>
+    <a href="ProfileCards.php">Profiles</a>
   </nav>
 
   <header>

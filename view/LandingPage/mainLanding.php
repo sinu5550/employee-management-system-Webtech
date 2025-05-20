@@ -13,9 +13,9 @@
 </head>
 <body>
   <nav>
-    <a href="mainLanding.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="testimonials.html">Testimonials</a>
+    <a href="mainLanding.php">Home</a>
+    <a href="features.php">Features</a>
+    <a href="testimonials.php">Testimonials</a>
     <a href="#about">About</a>
     <a href="#signup">Signup</a>
   </nav>

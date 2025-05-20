@@ -13,9 +13,9 @@
 </head>
 <body>
   <nav>
-    <a href="searchBar.html">Search</a>
-    <a href="filterPanel.html">Filters</a>
-    <a href="resultList.html">Results</a>
+    <a href="searchBar.php">Search</a>
+    <a href="filterPanel.php">Filters</a>
+    <a href="resultList.php">Results</a>
   </nav>
 
   <header>

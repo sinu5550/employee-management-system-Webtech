@@ -12,9 +12,9 @@
 </head>
 <body>
   <nav>
-    <a href="TrainingCatalog.html">Catalog</a>
-    <a href="Transcripts.html">Transcripts</a>
-    <a href="CertificationsTracker.html">Certifications</a>
+    <a href="TrainingCatalog.php">Catalog</a>
+    <a href="Transcripts.php">Transcripts</a>
+    <a href="CertificationsTracker.php">Certifications</a>
   </nav>
 
   <header>

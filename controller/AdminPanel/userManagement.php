@@ -11,9 +11,9 @@
 <body>
   <header>User Management</header>
   <nav>
-    <a href="userManagement.html">Users</a>
-    <a href="Contentmoderator.html">Content Moderation</a>
-    <a href="SystemSettings.html">System Settings</a>
+    <a href="userManagement.php">Users</a>
+    <a href="Contentmoderator.php">Content Moderation</a>
+    <a href="SystemSettings.php">System Settings</a>
   </nav>
   <div class="container">
     <div class="filters">

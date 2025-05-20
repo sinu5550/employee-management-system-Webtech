@@ -12,8 +12,8 @@
 </head>
 <body>
   <nav>
-    <a href="paginationControl.html">Pagination</a>
-    <a href="ItemsPerPageSelector.html">Items/Page</a>
+    <a href="paginationControl.php">Pagination</a>
+    <a href="ItemsPerPageSelector.php">Items/Page</a>
   </nav>
 
   <header>

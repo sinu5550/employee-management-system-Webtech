@@ -13,18 +13,18 @@
 </head>
 <body>
   <nav>
-    <a href="mainLanding.html">Home</a>
-    <a href="features.html">Features</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="mainLanding.html#about">About</a>
-    <a href="mainLanding.html#signup">Signup</a>
+    <a href="mainLanding.php">Home</a>
+    <a href="features.php">Features</a>
+    <a href="testimonials.php">Testimonials</a>
+    <a href="mainLanding.php#about">About</a>
+    <a href="mainLanding.php#signup">Signup</a>
   </nav>
 
   <section>
     <h2>What Our Users Say</h2>
     <p>"This system made HR work so much easier." – Sarah, HR Manager</p>
     <p>"Reliable and efficient!" – John, Team Leader</p>
-    <a href="mainLanding.html#signup" class="cta-button">Join Now</a>
+    <a href="mainLanding.php#signup" class="cta-button">Join Now</a>
   </section>
 
   <footer>

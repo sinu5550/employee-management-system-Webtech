@@ -13,8 +13,8 @@
 </head>
 <body>
   <nav>
-    <a href="NewsFeed.html">News Feed</a>
-    <a href="PriorityAlert.html">Priority Alerts</a>
+    <a href="NewsFeed.php">News Feed</a>
+    <a href="PriorityAlert.php">Priority Alerts</a>
   </nav>
 
   <header>

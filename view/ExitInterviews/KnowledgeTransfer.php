@@ -13,8 +13,8 @@
 </head>
 <body>
 <nav>
-  <a href="ExitForm.html">Exit Form</a>
-  <a href="KnowledgeTransfer.html">Knowledge Transfer</a>
+  <a href="ExitForm.php">Exit Form</a>
+  <a href="KnowledgeTransfer.php">Knowledge Transfer</a>
 </nav>
 
 <header>
