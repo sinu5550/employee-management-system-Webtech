@@ -21,7 +21,7 @@ session_start();
             echo "<p style='color:red; font-size:24px;'>Password must be at least 8 characters long.</p>";
         } else {
             setcookie('status', 'true', time()+3000, '/');
-                    header('location: ../controller/AdminPanel/userManagement.php');
+                    header('location: ../../controller/AdminPanel/userManagement.php');
         }
         
     }else{
