@@ -1,8 +1,6 @@
 <?php
-    }else{
-        header('location: ../userAuthentication/login.php');
-    }
-
+    session_start();
+    if(isset($_COOKIE['status'])){
 ?>
 <!DOCTYPE html>
 <html lang="en">
