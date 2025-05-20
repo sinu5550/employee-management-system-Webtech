@@ -35,7 +35,7 @@
 </html>
 <?php
     }else{
-        header('location: ../userAuthentication/login.php');
+        header('location: ../view/userAuthentication/login.php');
     }
 
 ?>
