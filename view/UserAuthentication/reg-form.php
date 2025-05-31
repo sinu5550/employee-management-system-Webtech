@@ -12,7 +12,7 @@
         <a href="home.php">Back to home</a>
         <h3>Please Register</h3>
 
-        <form method="post" action="validation.php" enctype="multipart/form-data">
+        <form method="POST" action="../../controller/regCheck.php" enctype="multipart/form-data">
             <table>
                 <tr>
                     <td><label for="name">Employee Name:</label></td>
