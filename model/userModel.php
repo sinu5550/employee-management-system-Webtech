@@ -24,3 +24,20 @@ function addUser($user)
         return false;
     }
 }
+
+function getAllEmployees()
+{
+    $con = getConnection();
+    $sql = "SELECT id, name, email FROM users ORDER BY name ASC";
+
+    $result = mysqli_query($con, $sql);
+    $employees = [];
+
+    if ($result) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            $employees[] = $row;
+        }
+    }
+
+    return $employees;
+}

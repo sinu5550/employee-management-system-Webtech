@@ -10,8 +10,9 @@
 </head>
 
 <body>
+    <?php include '../../navbar.php'; ?>
     <div class="editor-container">
-        <a href="department-structure.php">← Back to Department Structure</a>
+
         <h2>Edit Department</h2>
 
         <form>

@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <a href="home.php">Back to home</a>
+        <a href="../CompanyAnnouncements/NewsFeed.php">Back to home</a>
         <h3>Reset Your Password</h3>
         <form>
             <table>

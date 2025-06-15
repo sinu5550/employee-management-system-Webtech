@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <a href="home.php">Back to home</a>
         <h3>Please Register</h3>

@@ -8,8 +8,9 @@
 </head>
 
 <body>
+    <?php include '../../navbar.php'; ?>
     <div class="container">
-        <a href="../UserAuthentication/home.php">← Back to Home</a>
+        <a href="../CompanyAnnouncements/NewsFeed.php">← Back to Home</a>
         <h3>Contact Us</h3>
 
         <form onsubmit="return contactValidate()">
@@ -49,7 +50,6 @@
             window.location.href = "submit-contact.php";
             return false;
         }
-
     </script>
 </body>
 

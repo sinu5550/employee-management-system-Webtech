@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <?php include '../../navbar.php'; ?>
     <div class="reporting-container">
         <a href="department-editor.php">← Back to Department Structure</a>
         <h2>Reporting Lines Overview</h2>

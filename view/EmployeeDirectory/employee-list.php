@@ -1,3 +1,8 @@
+<?php
+
+require_once __DIR__ . '/../../model/userModel.php';
+$employees = getAllEmployees();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,21 +14,32 @@
 </head>
 
 <body>
+    <?php include '../../navbar.php'; ?>
+
     <div class="container">
         <h2>Employee Directory</h2>
 
-        <input type="text" id="searchInput" placeholder="Search by name or skill..." />
-        <button onclick="exportCSV()">Export CSV</button>
+        <input type="text" id="searchInput" placeholder="Search by name or skill…" />
 
         <ul id="employeeList">
-            <li>
-                <strong>Alice Johnson</strong> (JavaScript) <a href="employee-profile.php">View Profile</a>
-            </li>
-            <li>
-                <strong>Bob Smith</strong> (Python) <a href="employee-profile.php">View Profile</a>
-            </li>
+            <?php foreach ($employees as $emp): ?>
+                <li>
+                    <strong><?= $emp['name'] ?></strong>
+                    <a href="employee-profile.php?id=<?= $emp['id'] ?>">View Profile</a>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </div>
+
+    <script>
+        const search = document.getElementById('searchInput');
+        search.addEventListener('keyup', () => {
+            const term = search.value.toLowerCase();
+            document.querySelectorAll('#employeeList li').forEach(li => {
+                li.style.display = li.textContent.toLowerCase().includes(term) ? '' : 'none';
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <?php include '../../navbar.php'; ?>
     <div class="success">
         <h3>Thank You!</h3>
         <p>Your message has been received. We will get back to you shortly.</p>

@@ -1,48 +1,52 @@
 <?php
-    session_start();
-    if(isset($_COOKIE['status'])){
+session_start();
+if (isset($_COOKIE['status'])) {
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transcripts</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>
-    <a href="TrainingCatalog.php">Catalog</a>
-    <a href="Transcripts.php">Transcripts</a>
-    <a href="CertificationsTracker.php">Certifications</a>
-  </nav>
+  <!DOCTYPE html>
+  <html lang="en">
 
-  <header>
-    <h1>Your Training Transcripts</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcripts</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-  <section class="transcript-entry">
-    <h4>Effective Communication</h4>
-    <p>Status: Completed</p>
-    <div class="progress-bar">
-      <div class="progress" style="width: 100%">100%</div>
-    </div>
-  </section>
+  <body>
+    <?php include '../../navbar.php'; ?>
+    <nav>
+      <a href="TrainingCatalog.php">Catalog</a>
+      <a href="Transcripts.php">Transcripts</a>
+      <a href="CertificationsTracker.php">Certifications</a>
+    </nav>
 
-  <section class="transcript-entry">
-    <h4>Advanced Excel</h4>
-    <p>Status: In Progress</p>
-    <div class="progress-bar">
-      <div class="progress" style="width: 50%">50%</div>
-    </div>
-  </section>
+    <header>
+      <h1>Your Training Transcripts</h1>
+    </header>
 
-  <footer>&copy; 2025 Company Name</footer>
-</body>
-</html>
+    <section class="transcript-entry">
+      <h4>Effective Communication</h4>
+      <p>Status: Completed</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 100%">100%</div>
+      </div>
+    </section>
+
+    <section class="transcript-entry">
+      <h4>Advanced Excel</h4>
+      <p>Status: In Progress</p>
+      <div class="progress-bar">
+        <div class="progress" style="width: 50%">50%</div>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Company Name</footer>
+  </body>
+
+  </html>
 <?php
-    }else{
-        header('location: ../userAuthentication/login.php');
-    }
+} else {
+  header('location: ../userAuthentication/login.php');
+}
 
 ?>

@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
         $status = login($user);
         if ($status) {
             setcookie('status', 'true', time() + 3000, '/');
-            header('location: AdminPanel/userManagement.php');
+            header('location: ../view/CompanyAnnouncements/NewsFeed.php');
             exit();
         } else {
             echo "Invalid email or password!";
