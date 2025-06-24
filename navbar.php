@@ -59,11 +59,14 @@
         <div class="logo">Employee Management System</div>
         <ul class="menu">
             <li><a href="/webtech/view/CompanyAnnouncements/NewsFeed.php">Home</a></li>
-            <li><a href="/webtech/view/Timesheets/WeeklyTimesheet.php">Timesheet</a></li>
+            <li><a href="/webtech/view/Timesheets/WeeklyTimesheet.php">Timesheets</a></li>
             <li><a href="/webtech/view/DepartmentStructure/department-editor.php">Departments_Structure</a></li>
             <li><a href="/webtech/view/EmployeeDirectory/employee-list.php">Employee List</a></li>
             <li><a href="/webtech/controller/AdminPanel/userManagement.php">Manage User</a></li>
             <li><a href="/webtech/view/ContactForm/contact.php">Contact</a></li>
+            <li><a href="/webtech/view/OrgChart/ProfileCards.php">Org Chart</a></li>
+            <li><a href="/webtech/view/ExitInterviews/ExitForm.php">Exit Interview</a></li>
+            <li><a href="/webtech/view/TrainingRecords/TrainingCatalog.php">Training Records</a></li>
             <li><a href="/webtech/view/UserAuthentication/logout.php">Logout</a></li>
         </ul>
         <div>
